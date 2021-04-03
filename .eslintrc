@@ -1,0 +1,90 @@
+{
+  "env": {
+    "browser": true,
+    "es2017": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "tsconfigRootDir": ".",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-debugger": "warn",
+    "space-before-blocks": "error",
+    "no-else-return": "error",
+    "no-return-await": "error",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "camelcase": "error",
+    "no-multi-spaces": "error",
+    "no-multiple-empty-lines": "error",
+    "space-infix-ops": "error",
+    "no-return-assign": "error",
+    "prefer-destructuring": ["error", {"object": true, "array": false}],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
+    "eol-last": ["error", "always"],
+    "spaced-comment": ["error", "always"],
+    "no-trailing-spaces": 2,
+    "curly": ["error", "all"],
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "quotes": ["error", "single"],
+    "max-len": ["error", { "code": 80 }],
+    "quote-props": ["error", "consistent-as-needed"],
+    "linebreak-style": ["error", "unix"],
+    "padded-blocks": ["error", "never"],
+    "no-unused-expressions": "error",
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "space-in-parens": ["error", "never"],
+    "func-call-spacing": ["error", "never"],
+    "function-paren-newline": ["error", "multiline"],
+    "array-bracket-newline": ["error", { "multiline": true }],
+    "brace-style": ["error", "1tbs"],
+    "object-shorthand": ["error", "always", {
+      "avoidQuotes": true,
+      "avoidExplicitReturnArrows": true
+    }],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": ["let", "const"], "next": "*" },
+      { "blankLine": "any", "prev": ["let", "const"], "next": ["let", "const"] },
+      { "blankLine": "always", "prev": ["if"], "next": ["*"] },
+      { "blankLine": "always", "prev": ["*"], "next": ["if"] }
+    ],
+
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-boolean-value": 2,
+    "react/jsx-child-element-spacing": 2,
+    "react/jsx-closing-bracket-location": [2, "line-aligned"],
+    "react/jsx-curly-brace-presence": 2,
+    "react/jsx-curly-newline": 2,
+    "react/jsx-curly-spacing": [2, {"when": "always", "children": true}],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-fragments": 2
+  },
+  "overrides": [
+    {
+      "files": ["**/*.spec.ts"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
