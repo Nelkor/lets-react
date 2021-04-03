@@ -9,7 +9,7 @@
     "build": "webpack",
     "serve": "webpack serve",
     "ts": "tsc --noemit",
-    "lint": "eslint . --ext .ts --fix"
+    "lint": "eslint . --ext .ts,.tsx --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",

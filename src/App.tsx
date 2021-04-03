@@ -10,7 +10,6 @@ const App: FC = () => {
     <>
       <h1>{ count }</h1>
       <button onClick={ incCount }>+1</button>
-      <input type="text"/>
     </>
   )
 }
