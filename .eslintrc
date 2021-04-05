@@ -59,6 +59,7 @@
     "function-paren-newline": [2, "multiline"],
     "array-bracket-newline": [2, { "multiline": true }],
     "brace-style": [2, "1tbs"],
+    "object-curly-newline": ["error", { "multiline": true }],
     "object-shorthand": [2, "always", {
       "avoidQuotes": true,
       "avoidExplicitReturnArrows": true
